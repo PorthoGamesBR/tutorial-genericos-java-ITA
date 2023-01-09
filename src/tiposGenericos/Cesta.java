@@ -22,7 +22,7 @@ public class Cesta<E> {
 		return !lista.isEmpty();
 	}
 	
-	public void adicionaTodos(Collection<E> elementos) {
+	public void adicionaTodos(Collection<? extends E> elementos) {
 		for(E e : elementos) {
 			adiciona(e);
 		}
